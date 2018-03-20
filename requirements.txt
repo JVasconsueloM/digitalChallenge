@@ -6,7 +6,7 @@ django-session-security==2.5.1
 djangorestframework==3.7.7
 djangorestframework-bulk==0.2.1
 pip==9.0.1
-psycopg2-binary==2.7.4
+psycopg2==2.7.4
 pytz==2018.3
 setuptools==28.8.0
 sqlparse==0.2.4

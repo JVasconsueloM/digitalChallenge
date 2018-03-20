@@ -15,12 +15,12 @@ class Product(models.Model):
     type = models.CharField(max_length=2, choices=TYPE_PRODUCTS, default=PRODUCT)
     name = models.CharField(max_length=150)
     description = models.TextField(blank=True, null=True)
-    is_variation = models.BooleanField()
+    is_variation = models.BooleanField(default=False)
     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, blank=True, null=True)
     code = models.IntegerField(blank=True, null=True)
     family = models.CharField(max_length=2, choices=FAMILIES, default=HOME)
-    is_complement = models.BooleanField()
-    is_delete = models.BooleanField()
+    is_complement = models.BooleanField(default=False)
+    is_delete = models.BooleanField(default=False)
 
     @staticmethod
     def fields():
