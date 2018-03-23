@@ -1,7 +1,7 @@
 from digital_challenge.settings import *
 import dj_database_url
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'assert')
 STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
