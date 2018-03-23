@@ -13,6 +13,5 @@ FAMILIES = (
     (HEALTH, 'Home'),
 )
 
-
 LIMIT = 10
 OFFSET = 0

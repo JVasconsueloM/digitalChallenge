@@ -1,6 +1,7 @@
 from django.urls import path
 
-from apps.comun.apis import ProductsAPIView, BrandsAPIView, ProductDetailsAPIView, APIProducts, APIProductDetails
+from apps.comun.apis import ProductsAPIView, BrandsAPIView, ProductDetailsAPIView, APIProducts, APIProductDetails, \
+    APIAuthentication
 from apps.comun.views import FileUploadView
 
 app_name = 'common'
@@ -14,5 +15,7 @@ urlpatterns = [
     path('api/products/', APIProducts.as_view(), name='api_products'),
     path('api/products/<int:pk>/', APIProductDetails.as_view(), name='api_product_details'),
     path('api/file/', FileUploadView.as_view(), name='api_file'),
+
+    path('auth/', APIAuthentication.as_view(), name='authentication'),
 
 ]
