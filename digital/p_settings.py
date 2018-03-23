@@ -1,4 +1,4 @@
-from digital_challenge.settings import *
+from digital.settings import *
 
 DEBUG = False
 

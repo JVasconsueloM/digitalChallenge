@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'digital_challenge.urls'
+ROOT_URLCONF = 'digital.urls'
 
 TEMPLATES = [
     {
@@ -112,7 +112,7 @@ CORS_ALLOW_HEADERS = (
     # 'x-requested-with',
 )
 
-WSGI_APPLICATION = 'digital_challenge.wsgi.application'
+WSGI_APPLICATION = 'digital.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
