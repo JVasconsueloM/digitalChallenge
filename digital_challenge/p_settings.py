@@ -1,11 +1,18 @@
 from digital_challenge.settings import *
+import dj_database_url
 
-DEBUG = False
-
-ALLOWED_HOSTS = ['*']
-
-STATIC_ROOT = '/home/polar/webapps/recursos/digital_challenge/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = '/home/polar/webapps/recursos/digital_challenge/media/'
-MEDIA_URL = '/media/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+ENVIRONMENT = 'production'
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+DATABASES['default'] = dj_database_url.config(
+    default='DATABASE_URL_HERE'
+)
