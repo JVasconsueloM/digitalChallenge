@@ -120,11 +120,11 @@ WSGI_APPLICATION = 'digital_challenge.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "digital",
-        "USER": "digital",
-        "PASSWORD": "1234",
-        "HOST": "localhost",
-        "PORT": "",
+        "NAME": "d657c302t3vvdg",
+        "USER": "kxepnpowotgglq",
+        "PASSWORD": "c3d7c731d7b18bf43b6aa4abba2b77290d4b4fd2be5eed55fedbc1dd8276893b",
+        "HOST": "ec2-50-19-88-36.compute-1.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
